@@ -17,7 +17,7 @@ const App = () => {
                     <div className="container mx-auto flex justify-between items-center">
                         {/* Add a Link for "Dashboard" */}
                         <Link to="/" className="text-white text-2xl font-bold hover:text-yellow-300 transition">
-                            Dashboard
+                            TransactiFlow
                         </Link>
                         <div className="space-x-6">
                             <Link to="/" className="text-white hover:text-yellow-300 transition">
