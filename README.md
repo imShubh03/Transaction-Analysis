@@ -26,28 +26,62 @@ Here’s a quick preview of the TransactiFlow dashboard in action:
 ![image](https://github.com/user-attachments/assets/fbecf924-9c50-4c92-aa9b-62a5457fea00)
 
 
----
 
-# Stack Technologies 🛠️
-
-### Frontend:
-- **React** - A JavaScript library for building user interfaces.
-- **Tailwind CSS** - For modern and responsive styling.
-- **Recharts** - For interactive chart visualizations.
-- **React Router** - For routing and navigation.
-
-### Backend:
-- **Node.js** - A runtime environment for JavaScript.
-- **Express.js** - A web application framework for Node.js.
-- **MongoDB** - A NoSQL database for storing transaction data.
-- **Axios** - For making HTTP requests to fetch data from the backend.
-
----
 
 # Installation Instructions 📝
 
-### Backend Installation 🔧
+## Quick Start Guide
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/TransactiFlow.git
+### Backend Setup
+```bash
+# Go to server directory
+cd backend
+
+# Install dependencies
+npm install
+
+# Create .env file
+PORT=3000
+MONGODB_URI=mongodb+srv://USERNAME:<PASSWORD>@cluster0.dai2p.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+
+# Start server
+npm start
+```
+
+### Frontend Setup
+```bash
+# Go to client directory
+cd frontend
+
+# Install dependencies
+npm install
+
+# Create .env file
+TRANSACTION_API_ENDPOINT =http://localhost:3000/api/transcation
+
+# Start application
+npm run dev
+```
+
+
+
+### Access Application
+- Frontend: `http://localhost:5173`
+- Backend: `http://localhost:3000`
+
+## API Endpoints
+- GET `/api/transactions/list` - List transactions
+- GET `/api/transactions/statistics` - Get statistics
+- GET `/api/transactions/bar-chart` - Get bar chart data
+- GET `/api/transactions/pie-chart` - Get pie chart data
+- GET `/api/transactions/combined-data` - Get all data
+
+## Tech Stack
+- Backend: Node.js, Express, MongoDB
+- Frontend: React, Recharts, Tailwind CSS
+
+## Features
+- Transaction listing with search
+- Monthly statistics
+- Interactive charts
+- Responsive design
